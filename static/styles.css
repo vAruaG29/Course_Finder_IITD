@@ -33,21 +33,21 @@ input, select, button {
     border-radius: 4px;
 }
 button {
-    background-color: #007bff;
+    background-color: #6f42c1; /* Purple background */
     color: white;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 button:hover {
-    background-color: #0056b3;
+    background-color: #5a32a3; /* Slightly darker purple */
 }
 ul {
     list-style-type: none;
     padding: 0;
 }
 li {
-    background: #007bff;
+    background: #6f42c1; /* Purple background */
     color: white;
     padding: 10px;
     margin-bottom: 5px;

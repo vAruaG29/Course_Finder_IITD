@@ -1,104 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Finder</title>
-    <script>
-        function updateForm() {
-            var mode = document.getElementById('mode').value;
-            var check = document.getElementById('check').value;
-            var student2Input = document.getElementById('student2_input');
-            var kerberos2Input = document.getElementById('kerberos2_input');
-
-            if (mode == '0') {  // Show inputs for student 2
-                if (check == '1') {
-                    student2Input.style.display = 'block';
-                    kerberos2Input.style.display = 'none';
-                } else {
-                    student2Input.style.display = 'none';
-                    kerberos2Input.style.display = 'block';
-                }
-            } else {  // Hide inputs for student 2
-                student2Input.style.display = 'none';
-                kerberos2Input.style.display = 'none';
-            }
-        }
-
-        function updateStudentInput() {
-            var check = document.getElementById('check').value;
-            var student1Input = document.getElementById('student1_input');
-            var kerberos1Input = document.getElementById('kerberos1_input');
-
-            if (check == '1') {
-                student1Input.style.display = 'block';
-                kerberos1Input.style.display = 'none';
-            } else {
-                student1Input.style.display = 'none';
-                kerberos1Input.style.display = 'block';
-            }
-
-            updateForm();
-        }
-
-        window.onload = function() {
-            updateForm();
-            updateStudentInput();
-        }
-    </script>
-</head>
-<body>
-    <h1>Course Finder</h1>
-    <form method="post">
-        <label for="mode">Mode:</label>
-        <select name="mode" id="mode" onchange="updateForm()">
-            <option value="1">Search for your courses</option>
-            <option value="0">See common courses with someone</option>
-        </select><br><br>
-        
-        <label for="check">Search by:</label>
-        <select name="check" id="check" onchange="updateStudentInput()">
-            <option value="1">Name</option>
-            <option value="0">Entry number</option>
-        </select><br><br>
-
-        <div id="student1_input">
-            <label for="student1">Student 1:</label>
-            <input type="text" name="student1" id="student1"><br><br>
-        </div>
-
-        <div id="kerberos1_input">
-            <label for="kerberos_id1">Kerberos ID 1:</label>
-            <input type="text" name="kerberos_id1" id="kerberos_id1"><br><br>
-        </div>
-
-        <div id="student2_input">
-            <label for="student2">Student 2:</label>
-            <input type="text" name="student2" id="student2"><br><br>
-        </div>
-
-        <div id="kerberos2_input">
-            <label for="kerberos_id2">Kerberos ID 2:</label>
-            <input type="text" name="kerberos_id2" id="kerberos_id2"><br><br>
-        </div>
-
-        <label for="code_prefix">Code Prefix:</label>
-        <input type="text" name="code_prefix" id="code_prefix" required><br><br>
-
-        <button type="submit">Submit</button>
-    </form>
-
-    {% if result %}
-    <h2>Result:</h2>
-    <ul>
-        {% for course in result %}
-        <li>{{ course.split('-')[1] }}</li>
-        {% endfor %}
-    </ul>
-    {% endif %}
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -186,7 +85,7 @@
                     <input type="text" name="kerberos_id2" id="kerberos_id2"><br><br>
                 </div>
 
-                <label for="Semester_Code (e.g. 2301)">Code Prefix:</label>
+                <label for="Semester_Code (e.g. 2301)">Semester_Code (e.g. 2301):</label>
                 <input type="text" name="Semester_Code (e.g. 2301)" id="Semester_Code (e.g. 2301)" required><br><br>
 
                 <button type="submit">Submit</button>
