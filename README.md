@@ -20,3 +20,7 @@
 </ol>
 <H3> Run the app.py file and then use the given local host link to redirect to the page.</H3>
 
+<H4> Input Page Example </H4>
+<img src="https://github.com/vAruaG29/Course_Finder_IITD/blob/main/ref_input.png">
+<H5> Result Example </H5>
+<img src="https://github.com/vAruaG29/Course_Finder_IITD/blob/main/ref_result.png">
